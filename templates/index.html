@@ -5,7 +5,6 @@
 <head>
     <!-- include links -->
     {%include "upLinks.html" %}
-
     <!-- owl Carousel Css -->
     <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet">
     <link href="{% static 'css/owl.theme.css' %}" rel="stylesheet">
@@ -20,10 +19,10 @@
 <body class="animsition">
     <div class="intro-section">
         <!-- intro section -->
-
         <!-- include header -->
         {%include "header.html" %}
 
+        
         <!-- /.navigation -->
         <div class="container">
             <div class="row">
@@ -74,11 +73,13 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="service-block mb20 pinside30 outline text-center">
-                        <div class="service-icon mb30"><img src="{% static 'images/service-icon3.png' %}" class="img-responsive" alt=""></div>
+                        <div class="service-icon mb30"><img src="{% static 'images/service-icon3.png' %}" class="img-responsive" alt="">
+                        </div>
                         <div class="">
                             <h2><a href="{% url 'service-detail' %}" class="heading-title">Nifty Future</a></h2>
                             <p>Posroin in tellusin libero one saculis sihoncus urabitur on ictumie libero elementum leous dapibus tortor.</p>
                             <a href="{% url 'service-detail' %}" class="btn-link">Read More</a>
+
                         </div>
                     </div>
                 </div>
@@ -90,6 +91,7 @@
                             <h2><a href="{% url 'service-detail' %}" class="heading-title">Curruncy</a></h2>
                             <p>Fussce asapien idur loremis svallise dapibuorem ipsum dolorese sitamet ectetur iscing elitra saero.</p>
                             <a href="{% url 'service-detail' %}" class="btn-link">Read More</a>
+
                         </div>
                     </div>
                     <!-- /.service block -->
@@ -289,7 +291,8 @@
                         </div>
                         <div class="post-content">
                             <p>Aliquam sed at sollicitudin tellus aliquam imperdiet is sem rumdui id nisi blandit non lorem tellus aliquam imperdiet is sem rumdui sollicitudin semeque lorem ipsums derons libero nisi vitae elit ullamper mauris vitae dignissim suscipit lorem. </p>
-                            <a href="{% url 'blog-single' %}" class="btn-link">Read More</a> </div>
+                            <a href="{% url 'blog-single' %}" class="btn-link">Read More</a> 
+                        </div>
                     </div>
                     <!-- /.post block -->
                 </div>
@@ -302,7 +305,7 @@
                         </div>
                         <!-- /.post meta -->
                         <div class="post-header">
-                            <h1 class="post-title mb10"><a href="blog-single.html" class="title">The Expert Opinion We Recommendation</a></h1>
+                            <h1 class="post-title mb10"><a href="{% url 'blog-single' %}" class="title">The Expert Opinion We Recommendation</a></h1>
                         </div>
                         <div class="post-meta mb30">
                             <!-- post meta -->
@@ -311,7 +314,8 @@
                         </div>
                         <div class="post-content">
                             <p>Proin inte llus inli bro iacu lis rhon cus.urab itur a dic tum libe roeu emes elem en tum leoiv amus dapi bus torto rsed bibe ndum ull am corp envel its scele risque feli sid pellen tesque era tull pos uere.</p>
-                            <a href="{% url 'blog-single' %}" class="btn-link">Read More</a> </div>
+                            <a href="{% url 'blog-single' %}" class="btn-link">Read More</a> 
+                        </div>
                     </div>
                     <!-- /.post block -->
                 </div>
@@ -321,15 +325,7 @@
     <!-- include footer here -->
     {%include "footer.html" %}
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content ">
-                <div class="modal-body">
-                    <iframe width="100%" height="600" src="https://www.youtube.com/embed/CoirzH4fByQ" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- include downLinks here -->
     {%include "downLinks.html" %}
     <!-- owl carsoul -->

@@ -26,6 +26,3 @@ def contact(request):
 
 def styleGuide(request):
 	return render(request, 'typography.html')				
-
-
-
