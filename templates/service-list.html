@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   {%include "upLinks.html" %}
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="animsition">
+    <div class="page-header">
+        <!-- page header -->
+        
+        {%include "header.html" %}
+
+        <!-- /.navigation -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center col-xs-12">
+                    <div class="page-caption">
+                        <h1 class="page-title">The Best Brokers Services</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.page header -->
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-block mb20 pinside30 outline text-center">
+                        <div class="service-icon mb30"><img src="{% static 'images/service-icon1.png' %}" class="img-responsive" alt=""></div>
+                        <div class="">
+                            <h2><a href="service-detail.html" class="heading-title">Equity</a></h2>
+                            <p>Donec euurna lobortis antes gravidase iaculis aecenas is euesr suscipitatullamcorper is miuspe ndisseac.</p>
+                            <a href="service-detail.html" class="btn-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-block mb20 pinside30 outline text-center">
+                        <div class="service-icon mb30"><img src="{% static 'images/service-icon2.png' %}" class="img-responsive" alt=""></div>
+                        <div class="">
+                            <h2><a href="service-detail.html" class="heading-title">Comodity</a></h2>
+                            <p>Nulla lorem risu elementum spoeircis atincid vestibulum esnean tempor stibullor non pelntesque. </p>
+                            <a href="service-detail.html" class="btn-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-block mb20 pinside30 outline text-center">
+                        <div class="service-icon mb30"><img src="{% static 'images/service-icon3.png' %}" class="img-responsive" alt=""></div>
+                        <div class="">
+                            <h2><a href="#" class="heading-title">Nifty Future</a></h2>
+                            <p>Posroin in tellusin libero one saculis sihoncus urabitur on ictumie libero elementum leous dapibus tortor.</p>
+                            <a href="service-detail.html" class="btn-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-block mb20 pinside30 outline text-center">
+                        <div class="service-icon mb30"><img src="{% static 'images/service-icon4.png' %}" class="img-responsive" alt=""></div>
+                        <div class="">
+                            <h2><a href="service-detail.html" class="heading-title">Curruncy</a></h2>
+                            <p>Fussce asapien idur loremis svallise dapibuorem ipsum dolorese sitamet ectetur iscing elitra saero.</p>
+                            <a href="service-detail.html" class="btn-link">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%include "footer.html" %}
+
+    {%include "downLinks.html" %}
+</body>
+
+</html>

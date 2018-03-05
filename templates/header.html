@@ -1,0 +1,57 @@
+    {% block header %}
+
+    {% load static %}
+     <div class="top-header">
+            <!-- top heder -->
+            <div class="container">
+                <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-5  hidden-xs">
+                            <p>Welcome to our broker agency website.</p>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-7 hidden-xs">
+                            <div class="pull-right">
+                                <span class="top-link"><i class="fa fa-phone"></i> +00 (123) 456 7890</span>
+                                <span class="top-link"><i class="fa fa-envelope"></i> info@broker.com</span>
+                                <span class="navigation-search top-link">
+              <a href="#"><i class="fa fa-search"></i></a>
+            </span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.top header -->
+            <!-- navigation-transparent -->
+            <div class="header">
+                <!-- navigation -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <a class="logo" href="{% url 'logo' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div id="navigation" class="navigation">
+                                <ul class="pull-right">
+                                    <li class="active"><a href="{% url 'home' %}" title="Home" class="animsition-link">Home</a></li>
+                                    <li><a href="{% url 'blog' %}" title="Blog" class="animsition-link">Blog</a>
+                                        <ul>
+                                            <li><a href="{% url 'blog' %}" title="Blog" class="animsition-link">Blog</a></li>
+                                            <li><a href="{% url 'blog-single' %}" title="Blog Single" class="animsition-link">Blog Single</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{% url 'service-list' %}" title="Service" class="animsition-link">Service List</a>
+                                        <ul>
+                                            <li><a href="{% url 'service-list' %}" title="Service List">Service List</a></li>
+                                            <li><a href="{% url 'service-detail' %}" title="Service Detail">Service Detail</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{% url 'contact-us' %}" title="Contact Us" class="animsition-link">Contact Us</a></li>
+                                    <li><a href="{% url 'style-guide' %}" title="Style Guide" class="animsition-link">style guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        {% endblock %}    
