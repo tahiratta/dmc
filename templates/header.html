@@ -1,6 +1,7 @@
     {% block header %}
 
     {% load static %}
+
      <div class="top-header">
             <!-- top heder -->
             <div class="container">
@@ -32,8 +33,14 @@
                         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                             <div id="navigation" class="navigation">
                                 <ul class="pull-right">
-                                    <li class="active"><a href="{% url 'home' %}" title="Home" class="animsition-link">Home</a></li>
-                                    <li><a href="{% url 'blog' %}" title="Blog" class="animsition-link">Blog</a>
+
+                                    {% for menu_items in index_data1 %}
+
+                                    <li class="active"><a href="{% url 'home' %}" title="Home" class="animsition-link">{{menu_items.menu_item_title}}</a></li>
+
+                                    {% endfor %}
+
+                                    <!-- <li><a href="{% url 'blog' %}" title="Blog" class="animsition-link">Blog</a>
                                         <ul>
                                             <li><a href="{% url 'blog' %}" title="Blog" class="animsition-link">Blog</a></li>
                                             <li><a href="{% url 'blog-single' %}" title="Blog Single" class="animsition-link">Blog Single</a></li>
@@ -46,7 +53,8 @@
                                         </ul>
                                     </li>
                                     <li><a href="{% url 'contact-us' %}" title="Contact Us" class="animsition-link">Contact Us</a></li>
-                                    <li><a href="{% url 'style-guide' %}" title="Style Guide" class="animsition-link">style guide</a></li>
+                                    <li class="active"><a href=# title="Manuals" class="animsition-link">Manuals</a></li>
+                                    <li><a href="{% url 'style-guide' %}" title="Style Guide" class="animsition-link">style guide</a></li> -->
                                 </ul>
                             </div>
                         </div>
