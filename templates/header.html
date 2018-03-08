@@ -1,3 +1,4 @@
+
     {% block header %}
 
     {% load static %}
@@ -35,26 +36,50 @@
                                 <ul class="pull-right">
 
                                     {% for menu_items in index_data1 %}
+                                    {% if menu_items.menu_item_id == 'MI1' %}
 
-                                    <li class="active"><a href="{% url 'home' %}" title="Home" class="animsition-link">{{menu_items.menu_item_title}}</a></li>
+                                    <li class="active"><a href="{% url 'home' %}" title="Home" class="animsition-link">{{menu_items.menu_item_title}}
+                                        </a></li>
+                                    {% endif %}
 
-                                    {% endfor %}
-
-                                    <!-- <li><a href="{% url 'blog' %}" title="Blog" class="animsition-link">Blog</a>
+                                    
+                                    {% if menu_items.menu_item_id == 'MI2' %}
+                                    <li><a href="{% url 'blog' %}" title="Blog" class="animsition-link">{{menu_items.menu_item_title}}</a>
+                                        {% endif %}
+                                        {% endfor %}
                                         <ul>
-                                            <li><a href="{% url 'blog' %}" title="Blog" class="animsition-link">Blog</a></li>
+                                            {% for menu_items in index_data1 %}
+                                            <li><a href="{% url 'blog' %}" title="Blog" class="animsition-link">{{menu_items.menu_item_title}}</a></li>
+                                            {% endfor %}
                                             <li><a href="{% url 'blog-single' %}" title="Blog Single" class="animsition-link">Blog Single</a></li>
+                                            
                                         </ul>
                                     </li>
-                                    <li><a href="{% url 'service-list' %}" title="Service" class="animsition-link">Service List</a>
+
+                                    {% for menu_items in index_data1 %}
+                                    {% if menu_items.menu_item_id == 'MI3' %}
+
+                                    <li><a href="{% url 'service-list' %}" title="Service" class="animsition-link">{{menu_items.menu_item_title}}</a>
+                                        {% endif %}
+                                        {% endfor %}
                                         <ul>
                                             <li><a href="{% url 'service-list' %}" title="Service List">Service List</a></li>
                                             <li><a href="{% url 'service-detail' %}" title="Service Detail">Service Detail</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{% url 'contact-us' %}" title="Contact Us" class="animsition-link">Contact Us</a></li>
-                                    <li class="active"><a href=# title="Manuals" class="animsition-link">Manuals</a></li>
-                                    <li><a href="{% url 'style-guide' %}" title="Style Guide" class="animsition-link">style guide</a></li> -->
+
+                                    {% for menu_items in index_data1 %}
+                                    {% if menu_items.menu_item_id == 'MI1' %}
+
+                                    <li><a href="{% url 'contact-us' %}" title="Contact Us" class="animsition-link">{{menu_items.menu_item_title}}</a></li>
+                                    {% endif %}
+
+                                    {% if menu_items.menu_item_id == 'MI4' %}
+                                    <li><a href="{% url 'style-guide' %}" title="Style Guide" class="animsition-link">{{menu_items.menu_item_title}}</a></li>
+                                    {% endif %}
+                                    {% endfor %}
+                                    
+
                                 </ul>
                             </div>
                         </div>

@@ -1,17 +1,28 @@
 from django.shortcuts import render
+#from django.db.models import Count
 #from django.template.response import TemplateResponse
-from dmc.models import Menu_items 
+from dmc.models import Menu_items, Sub_items
 
 def index(request):
-	
+
+	index_data1 = Menu_items.objects.all()
+	index_context1 = {'index_data1' : index_data1}
+	return render(request, 'index.html', index_context1)
 	'''
 	index_data1 = get_object_or_404(Menu_items, menu_item_id = "MI1")
 	index_context1 = {"index_data1" : index_data1}
 	return render(request, "index.html", index_context1)
-	'''	
-	index_data1 = Menu_items.objects.all()
-	index_context1 = {'index_data1' : index_data1}
-	return render(request, 'index.html', index_context1)
+	'''
+	#index_data1 = Menu_items.objects.all().prefetch_related('menus').annotate(sub_items = Count('menus'))
+	#index_data1 = Menu_items.objects.select_related('sub_items').all()
+
+ # all_models_dict = {
+ #        "template_name": "index.html",
+ #        "queryset": Menu_items.objects.all(),
+ #        "extra_context" : {"sub_items_list" : Sub_items.objects.all(),
+ #                           #and so on for all the desired models...
+ #                           }
+ #    }	
 
 	# index_data2 = Sub_items.objects.all()
 	# index_context2 = {'index_data2' : index_data2}
@@ -26,28 +37,44 @@ def index(request):
 	# return render(request, 'index.html', index_context4)
 
 def logo(request):
-	return render(request, 'index.html')
+	index_data1 = Menu_items.objects.all()
+	index_context1 = {'index_data1' : index_data1}
+	return render(request, 'index.html', index_context1)
 
 def home(request):
-	return render(request, 'index.html')			
+	index_data1 = Menu_items.objects.all()
+	index_context1 = {'index_data1' : index_data1}
+	return render(request, 'index.html', index_context1)			
 
 def blog(request):
-	return render(request, 'blog.html')				
+	index_data1 = Menu_items.objects.all()
+	index_context1 = {'index_data1' : index_data1}
+	return render(request, 'blog.html', index_context1)				
 
 def blogSingle(request):
-	return render(request, 'blog-single.html')
+	index_data1 = Menu_items.objects.all()
+	index_context1 = {'index_data1' : index_data1}
+	return render(request, 'blog-single.html', index_context1)
 
 def serviceList(request):
-	return render(request, 'service-list.html')
+	index_data1 = Menu_items.objects.all()
+	index_context1 = {'index_data1' : index_data1}
+	return render(request, 'service-list.html', index_context1)
 
 def serviceDetail(request):
-	return render(request, 'service-detail.html')
+	index_data1 = Menu_items.objects.all()
+	index_context1 = {'index_data1' : index_data1}
+	return render(request, 'service-detail.html', index_context1)
 
 def contact(request):
-	return render(request, 'contact-us.html')
+	index_data1 = Menu_items.objects.all()
+	index_context1 = {'index_data1' : index_data1}
+	return render(request, 'contact-us.html', index_context1)
 
 def styleGuide(request):
-	return render(request, 'typography.html')				
+	index_data1 = Menu_items.objects.all()
+	index_context1 = {'index_data1' : index_data1}
+	return render(request, 'typography.html', index_context1)				
 
 
 	
