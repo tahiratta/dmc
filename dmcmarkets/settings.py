@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 STATICFILES_DIRS = [
-    "/venvs/env1/djangoprojects/dmcmarkets/static",
+    "/static",
 ]
 
 
