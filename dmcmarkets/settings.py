@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 STATICFILES_DIRS = [
-    "/dmc/static",
+    os.path.join(dmcmarkets, '..', 'static'),
 ]
 
 
