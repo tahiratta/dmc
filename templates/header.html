@@ -8,14 +8,14 @@
             <div class="container">
                 <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-5  hidden-xs">
-                            <p>Welcome to our broker agency website.</p>
+                            <p>Corporate Member of Pakistan Mercantile Exchange.</p>
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-7 hidden-xs">
                             <div class="pull-right">
-                                <span class="top-link"><i class="fa fa-phone"></i> +00 (123) 456 7890</span>
-                                <span class="top-link"><i class="fa fa-envelope"></i> info@broker.com</span>
+                                <span class="top-link"><i class="fa fa-phone"></i> 042-3718 5340 </span>
+                                <span class="top-link"><i class="fa fa-envelope"></i> info@dmcmarkets.com</span>
                                 <span class="navigation-search top-link">
-              <a href="#"><i class="fa fa-search"></i></a>
+          
             </span>
                             </div>
                         </div>
@@ -35,49 +35,62 @@
                             <div id="navigation" class="navigation">
                                 <ul class="pull-right">
 
-                                    {% for menu_items in index_data1 %}
-                                    {% if menu_items.menu_item_id == 'MI1' %}
-
-                                    <li class="active"><a href="{% url 'home' %}" title="Home" class="animsition-link">{{menu_items.menu_item_title}}
+                                    <li class="active"><a href="{% url 'home' %}" title="Home" class="animsition-link">About Us
                                         </a></li>
-                                    {% endif %}
-
-                                    
-                                    {% if menu_items.menu_item_id == 'MI2' %}
-                                    <li><a href="{% url 'blog' %}" title="Blog" class="animsition-link">{{menu_items.menu_item_title}}</a>
-                                        {% endif %}
-                                        {% endfor %}
+  <li class="active"><a href="{% url 'certificate' %}" title="certificate" class="animsition-link">Certificate
+                                        </a></li>
+                                    <li><a href="{% url 'prod' %}" title="Blog" class="animsition-link">Products</a>
                                         <ul>
-                                            {% for menu_items in index_data1 %}
-                                            <li><a href="{% url 'blog' %}" title="Blog" class="animsition-link">{{menu_items.menu_item_title}}</a></li>
-                                            {% endfor %}
-                                            <li><a href="{% url 'blog-single' %}" title="Blog Single" class="animsition-link">Blog Single</a></li>
                                             
+                                            <li><a href="#" title="Blog" class="animsition-link">Metals</a>
+                                            <ul>
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">Gold</a></li>
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">Silver</a></li> 
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">Platinum</a></li>
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">Copper</a></li>   
+                                            </ul>     
+
+                                            </li>
+                                            <li><a href ="#" title="Blog Single" class="animsition-link">Energies</a>
+                                                <ul>
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">Crude Oil</a></li>
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">15 Brent</a></li> 
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">18 Natural Gas</a></li>   
+                                            </ul> 
+
+                                            </li>
+                                            <li><a href ="#" title="Blog Single" class="animsition-link">Currencies</a>
+                                                <ul>
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">GOLD EURUSD</a></li>
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">2GOLD GBPUSD</a></li> 
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">GOLD USDJPY</a></li>
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">GOLD USCHF</a></li>
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">GOLD USDCAD</a></li>
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">GOLD AUDUSD</a></li>   
+                                            </ul> 
+
+                                            </li>
+                                            <li><a href ="#" title="Blog Single" class="animsition-link">Indicies</a>
+                                               <ul>
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">S&P 500</a></li>
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">Nasdaq-100</a></li> 
+                                                <li><a href ="#" title="Blog Single" class="animsition-link">Dija-30</a></li>   
+                                            </ul>  
+
+                                            </li>
                                         </ul>
                                     </li>
 
-                                    {% for menu_items in index_data1 %}
-                                    {% if menu_items.menu_item_id == 'MI3' %}
-
-                                    <li><a href="{% url 'service-list' %}" title="Service" class="animsition-link">{{menu_items.menu_item_title}}</a>
-                                        {% endif %}
-                                        {% endfor %}
+                                    <li><a href="{% url 'pmexform' %}" title="Service" class="animsition-link">Pmex Forms</a>
                                         <ul>
-                                            <li><a href="{% url 'service-list' %}" title="Service List">Service List</a></li>
-                                            <li><a href="{% url 'service-detail' %}" title="Service Detail">Service Detail</a></li>
+                                            
+
+                                            <li><a href="{% static 'files/PMEXFORM.pdf' %}"   title="Service List" download>PMEX FORM</a></li>
+                                            <li><a href="{% static 'files/CommissionSheet.pdf' %}" title="Service Detail" download>COMMISSION SHEET</a></li>
                                         </ul>
                                     </li>
 
-                                    {% for menu_items in index_data1 %}
-                                    {% if menu_items.menu_item_id == 'MI1' %}
-
-                                    <li><a href="{% url 'contact-us' %}" title="Contact Us" class="animsition-link">{{menu_items.menu_item_title}}</a></li>
-                                    {% endif %}
-
-                                    {% if menu_items.menu_item_id == 'MI4' %}
-                                    <li><a href="{% url 'style-guide' %}" title="Style Guide" class="animsition-link">{{menu_items.menu_item_title}}</a></li>
-                                    {% endif %}
-                                    {% endfor %}
+                                    <li><a href="{% url 'contact-us' %}" title="Style Guide" class="animsition-link">Contacts/Complaints</a></li>
                                     
 
                                 </ul>

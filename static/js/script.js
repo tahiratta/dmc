@@ -60,6 +60,10 @@
   };
 })(jQuery);
 
+function myFunction() {
+    document.getElementById("demo").innerHTML = "You are Subscribe Now";
+}
+
 (function($){
 $(document).ready(function(){
 

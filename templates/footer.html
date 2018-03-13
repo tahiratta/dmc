@@ -18,7 +18,7 @@
                             <!-- /.ft icon -->
                             <div class="ft-content">
                                 <!-- ft content -->
-                                +91 123 456 789
+                                042-3718 5340
                             </div>
                             <!-- /.ft content -->
                         </div>
@@ -32,7 +32,7 @@
                             <!-- /.ft icon -->
                             <div class="ft-content">
                                 <!-- ft content -->
-                                info@broker.com
+                                info@dmcmarkets.com
                             </div>
                             <!-- /.ft content -->
                         </div>
@@ -46,8 +46,8 @@
                             <!-- /.ft icon -->
                             <div class="ft-content">
                                 <!-- ft content -->
-                                4451 Jett Lane Irvine,
-                                <br>CA 92614
+                               2nd Floor 36-Z DHA Phase-3 
+                                <br>LAHORE,PAKISTAN
                             </div>
                             <!-- /.ft content -->
                         </div>
@@ -60,10 +60,10 @@
                         <!-- footer-widget -->
                         <h3 class="footer-title">Quick Links</h3>
                         <ul class="bullet listnone no-padding mb0">
-                            <li><i class="fa fa-angle-right"></i> <a href="index.html" class="Home">Home</a></li>
-                            <li><i class="fa fa-angle-right"></i> <a href="service-list.html" title="Services">Services</a></li>
-                            <li><i class="fa fa-angle-right"></i> <a href="blog.html" title="Blog">Blog</a></li>
-                            <li><i class="fa fa-angle-right"></i> <a href="contact-us.html" title="Contact us">Contact us</a></li>
+                            <li><i class="fa fa-angle-right"></i> <a href="{% url 'home' %}" class="Home">Home</a></li>
+                            <li><i class="fa fa-angle-right"></i> <a href="{% url 'pmexform' %}" title="Services">PMEX FORMS</a></li>
+                            <li><i class="fa fa-angle-right"></i> <a href="{% url 'blog' %}" title="Blog">Blog</a></li>
+                            <li><i class="fa fa-angle-right"></i> <a href="{% url 'contact-us' %}" title="Contact us">Contact us</a></li>
                         </ul>
                         <!-- /.footer-widget -->
                     </div>
@@ -73,9 +73,9 @@
                         <!-- footer-widget -->
                         <h3 class="footer-title">Follow Us On</h3>
                         <ul class="listnone no-padding mb0">
-                            <li class="footer-link"><a href="#"><i class="fa fa-facebook-square "></i> facebook</a></li>
-                            <li class="footer-link"><a href="#"><i class="fa fa-twitter-square "></i> twitter</a></li>
-                            <li class="footer-link"><a href="#"><i class="fa fa-google-plus-square "></i> google-plus</a></li>
+                            <li class="footer-link"><a href="https://www.facebook.com/dmcmarkets.co/?hc_ref=ARQ64xjsT65MYsnMkkTMVzL4uYYYFMjZ4wE0-TX1kd-93xHlDgJ6A_6pONujyRQ81BY&fref=nf"><i class="fa fa-facebook-square "></i> facebook</a></li>
+                      
+                           
                         </ul>
                     </div>
                     <!-- /.footer-widget -->
@@ -85,15 +85,22 @@
                         <!-- footer-widget -->
                         <h3 class="footer-title">Newsletter</h3>
                         <p>Subscribe our email newsletter today to receive updates.</p>
-                        <form>
+                       
                             <div class="form-group">
                                 <label for="inputEmail3" class="sr-only control-label">Email</label>
                                 <input type="email" class="form-control" id="inputEmail3" placeholder="Enter Email Address">
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-outline">Subscribe</button>
+                                <button   onclick="myFunction1()" class="btn btn-outline">Subscribe</button>
+                                <p id="demo1"> </p>
                             </div>
-                        </form>
+                            <script>
+function myFunction1() {
+    document.getElementById("demo1").innerHTML = "You are Subscribe Now";
+    document.getElementById("inputEmail3").value = "";
+}
+</script>
+                       
                     </div>
                     <!-- /.footer-widget -->
                 </div>
@@ -106,7 +113,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                   Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
+               
                 </div>
             </div>
         </div>

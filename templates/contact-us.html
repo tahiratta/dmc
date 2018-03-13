@@ -10,6 +10,12 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+ iframe{
+  max-width: 100% !important;
+}
+
+    </style>s
 </head>
 <body class="animsition">
 <div class="page-header"><!-- page header -->
@@ -21,14 +27,18 @@
     <div class="row">
       <div class="col-md-12 col-sm-12 text-center col-xs-12">
         <div class="page-caption">
-          <h1 class="page-title">Contact Us</h1>
+      
         </div>
       </div>
     </div>
   </div>
 </div>
 <!-- /.page header -->
-
+<div class="fluid-container" align="center">
+<div class="map-responsive">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13611.255122483704!2d74.3792733!3d31.4743084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4368b3014a4be53c!2sDMC+Markets+Pvt+Limited!5e0!3m2!1sen!2s!4v1520592902191" width="1200" height="500" frameborder="0" style="border:0" class="map-responsive" allowfullscreen ></iframe>
+    </div>
+</div>
 <div class="content">
   <div class="container">
     <div class="row">
@@ -39,7 +49,7 @@
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h1>Get In Touch</h1>
             <div class="row">
-              <form class="form">
+             
               <!-- Text input-->
               <div class="form-group">
                 <label class="col-lg-7 col-md-7 col-sm-12 col-xs-12 control-label" for="textinput">Name <span class="required">*</span></label>  
@@ -52,7 +62,7 @@
               <div class="form-group">
                 <label class="col-lg-7 col-md-7 col-sm-12 col-xs-12 control-label" for="textinput">Email <span class="required">*</span></label>  
                 <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md"> 
+                <input id="textinput1" name="textinput" type="text" placeholder="" class="form-control input-md"> 
                 </div>
               </div>
 
@@ -60,7 +70,7 @@
               <div class="form-group">
                 <label class="col-lg-7 col-md-7 col-sm-12 col-xs-12 control-label" for="textinput">Phone <span class="required">*</span></label>  
                 <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
+                <input id="textinput2" name="textinput" type="text" placeholder="" class="form-control input-md">
                 </div>
               </div>
 
@@ -72,10 +82,21 @@
                 </div>
               </div>
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <button id="submit" name="singlebutton" class="btn btn-outline">Submit</button>
+                <button id="submit" onclick="myFunction()" name="singlebutton" class="btn btn-outline">Submit Request</button>
                 <span class="required pull-right">* Field Are Required</span>
+                <p id="demo"> </p>
+                <script>
+function myFunction() {
+    document.getElementById("textarea").value = "";
+     document.getElementById("textinput").value = "";
+    document.getElementById("textinput1").value = "";
+        document.getElementById("textinput2").value = "";
+    document.getElementById("demo").innerHTML = "You are Connected Now";
+  
+}
+</script>
               </div>
-            </form>
+         
             </div>
 
           </div>
@@ -86,12 +107,12 @@
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="widget outline">
-                    <h2 class="widget-title">Widget Title</h2>
+                  
                     <div class="widget-img mb30">
-                      <img src="{% static 'images/widget-pic.jpg' %}" class="img-responsive" alt="">
+                      <img src="{% static 'images/getintouch.jpg' %}" class="img-responsive" alt="">
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elitedse fermentum exanulla vulputate sitamet susciit leorem ipsum pharetra slass aptent dolor. </p>
-                    <a href="#" class="btn btn-outline">Learn More</a>
+                    <p>The dedicated professionals in our nationwide field offices are ready to help you always</p>
+                    <a href="{% url 'home' %}" class="btn btn-outline">Learn More</a>
                   </div>
                 </div>
         </div>

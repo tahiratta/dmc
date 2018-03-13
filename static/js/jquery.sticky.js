@@ -21,7 +21,10 @@
         // Browser globals
         factory(jQuery);
     }
-}(function ($) {
+}
+
+
+(function ($) {
     var slice = Array.prototype.slice; // save ref to original slice()
     var splice = Array.prototype.splice; // save ref to original slice()
 

@@ -1,13 +1,17 @@
 from django.shortcuts import render
 #from django.db.models import Count
 #from django.template.response import TemplateResponse
-from dmc.models import Menu_items, Sub_items
+from dmc.models import Menu_items
+
+from dmc.models import Sub_items
 
 def index(request):
 
 	index_data1 = Menu_items.objects.all()
+
 	index_context1 = {'index_data1' : index_data1}
 	return render(request, 'index.html', index_context1)
+
 	'''
 	index_data1 = get_object_or_404(Menu_items, menu_item_id = "MI1")
 	index_context1 = {"index_data1" : index_data1}
@@ -75,6 +79,16 @@ def styleGuide(request):
 	index_data1 = Menu_items.objects.all()
 	index_context1 = {'index_data1' : index_data1}
 	return render(request, 'typography.html', index_context1)				
-
-
+def pmexform(request):
+	index_data1 = Menu_items.objects.all()
+	index_context1 = {'index_data1' : index_data1}
+	return render(request, 'pmexform.html', index_context1)				
+def certificate(request):
+	index_data1 = Menu_items.objects.all()
+	index_context1 = {'index_data1' : index_data1}
+	return render(request, 'certificate.html', index_context1)	
+def prod(request):
+	index_data1 = Menu_items.objects.all()
+	index_context1 = {'index_data1' : index_data1}
+	return render(request, 'product.html', index_context1)	
 	
