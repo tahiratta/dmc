@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 STATICFILES_DIRS = [
-    "/static",
+    "dmc/static",
 ]
 
 
@@ -59,7 +59,7 @@ ROOT_URLCONF = 'dmcmarkets.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/venvs/env1/djangoprojects/dmcmarkets/templates'],
+        'DIRS': ['dmc/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
