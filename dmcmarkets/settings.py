@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -27,9 +28,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-STATICFILES_DIRS = [
+STATICFILES_DIRS = (
     os.path.join(BASE_DIR, '..', 'static'),
-]
+)
 
 
 # Application definition
@@ -59,7 +60,7 @@ ROOT_URLCONF = 'dmcmarkets.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/dmc/templates'],
+        'DIRS': ['C:\\venvs\\env1\\djangoprojects\\dmcmarkets\\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
