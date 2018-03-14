@@ -1,1 +1,1 @@
-web: python dmcmarkets.py
+web: python dmcmarkets.wsgi
