@@ -30,7 +30,7 @@ urlpatterns = [
 	#url(r'^about/$', dmcmarkets_views.about, name='about'),
 	#url(r'^contact/$', dmcmarkets_views.contact, name='contact'),
     url(r'^admin/', admin.site.urls),
-    url(r'^dmc/', include('dmc.urls')),
+    url(r'', include('dmc.urls')),
 ]
 
 if settings.DEBUG:
