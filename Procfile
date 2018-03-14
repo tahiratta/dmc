@@ -1,1 +1,1 @@
-web: python dmcmarkets.wsgi
+web: gunicorn dmcmarkets.wsgi
